@@ -3,6 +3,6 @@ services:
   redis:
     restart: always
     image: redis
-    container_name: redis_autoscrew
+    container_name: redis
     ports:
       - "6379:6379"

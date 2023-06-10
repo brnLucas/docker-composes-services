@@ -4,9 +4,8 @@ services:
   postgres:
     restart: always
     image: postgres
-    container_name: postgres_autoscrew
+    container_name: postgres
     environment:
-      - POSTGRES_DB=autoscrew
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
       - POSTGRES_PORT=5432
@@ -14,13 +13,6 @@ services:
       - "5432:5432"
     volumes:
       - ~/postgres_data:/var/lib/pgsql/data
-
-#  redis:
-#    restart: on-failure
-#    image: redis
-#    container_name: redis_autoscrew
-#    ports:
-#      - "6379:6379"
 
 volumes:
   db-data:

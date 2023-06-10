@@ -4,9 +4,8 @@ services:
   postgres:
     restart: always
     image: postgres
-    container_name: postgres_autoscrew
+    container_name: postgres
     environment:
-      - POSTGRES_DB=autoscrew
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=123456
       - POSTGRES_PORT=5432
