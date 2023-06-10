@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  redis:
+    restart: always
+    image: redis
+    container_name: redis_autoscrew
+    ports:
+      - "6379:6379"
